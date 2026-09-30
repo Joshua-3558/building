@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Veiwport" content="width=device-width,
+    initial-scale=1.0">
+    <meta charset="UFT-8">
+    <title>building</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <!--Navbar-->
+    <nav>
+         <nav class="navbar-container"></nav>
+        <h2 class="logo">
+            <span class="Prizzy's">Prizzy's</span>
+            <br><span class="GOLDEN BITE">GOLDEN BITE</span></br>
+        </h2>
+
+             <div class="menu-icon js-menu-toggle" aria-label="Togg navigation" role="button"
+            tabindex="0">
+                 <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+         <nav class="main-nav js-main-nav">
+          <ul>
+            <li><a href="index.html"><span class="HOME">Home</span></a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Event Decoration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Order</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--Hero Section-->
+ <body>
+    <section class="hero">
+        <h1>Taste the Crunch.</h1>
+        <p>Celebrate in Style.</p>
+        <br>Delicious snacks and stunning event decorations</br>
+        <br>for every special occasion.</br>  
+    </section>
+
+    <section class="hero2">
+        <h1>Welcome to Prizzy's Golden Bite</h1>
+        <h2>Where Great Taste</h2>
+        <h3>Meets Beatiful Celebrations</h3>
+        <p>we offer Crunchy, delicious snacks made with</p>
+        <p>quality ingredients and creative event decoration</p>
+        <p>serivice that turn your moments into memories</p>
+        <img src="#">
+    </section>
+
+    <!--Section-->
+    <div class="Section">
+        <div class="Featured-section"
+        id="featured-apartments">
+        <h2>Our Services</h2>
+        </div>
+
+        <div class="Apartments">
+            <div class="card">
+                <!--Snacks-->
+                <img src="build 2.jpg">
+            <h3>Snacks</h3>
+            <p>Crunchy tasty and made with love.</p>
+            <p>Perfect for any occasion</p>
+                <hr>
+            <a href="Apartment.html">Explore Snacks</a>    
+    </div>
+
+             <div class="card">
+                <!--Apartment 2-->
+                 <img src="build.jpeg">
+             <h3>Luxury Apartment</h3>
+            <p>₦1,200,000 / year</p>
+            <p>Lekki, Lagos</p>
+               <hr>
+             <a href="Apartment2.html">View Details</a>
+    </div>
+
+            <div class="card">
+                <!--Apartment 3-->
+                <img src="build 4.jpg">
+                <h3>Penthhesue Apartment</h3>
+                <p>₦700,000 / year</p>
+                <p>Ikeja, Lagos</p>
+                    <hr>
+                <a href="Apartment3.html">Veiw Details</a>
+            </div>
+  </div>
+</div>

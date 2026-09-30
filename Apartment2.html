@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Apartment Details</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare
+    .com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+  <!--Navbar-->
+    <nav>
+        <nav class="navbar-container"></nav>
+        <h2 class="logo">
+            <span class="rightconcept">RightConcept</span>
+            <br><span class="agency">Agency</span></br>
+        </h2>
+
+             <div class="menu-icon js-menu-toggle" aria-label="Togg navigation" role="button"
+            tabindex="0">
+                 <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+         <nav class="main-nav js-main-nav">
+          <ul>
+            <li><a href="index.html"><span class="HOME">Home</span></a></li>
+            <li><a href="index.html#featured-apartments" class="menu-link">Apartments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </nav>
+    </nav>
+<body>
+    <!--Main Image-->
+    <section class="gallery">
+        <img id="main-img" src="build 2.jpg" alt="Main Apartment Image">
+
+        <div class="thumbnails">
+            <img src="passage.jpg">
+            <img src="kithen1.jpeg">
+            <img src="bathroom2.jpeg">
+            <img src="room2.jpeg">
+            <img src="build 2.jpg">
+            <div class="floorplan">View Floor Plan</div>
+        </div>
+    </section>
+
+    <!--Details-->
+    <section class="details">
+        <h1>Luxury Apartment in Lekki, Lagos</h1>
+        <p class="price">₦11,200,000 / year</p>
+
+        <p class="description">A contemporary and spacious luxury apartment.
+            located in Lekki, 
+            close to major roads and amenities. Perfect for families and
+            professionals.
+        </p>
+    </section>
+
+    <div class="booking-page">    
+        <div class="container">
+            <section class="booking" id="booking-form">
+            <form action="https://formsubmit.co/jadewumi35@gmail.com"
+            method="post">
+
+            <!--Hidden setting-->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Apartment Booking!">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="Apartment" value="Luxury Apartment in Lekki, Lagos">
+            <h1 class="main-title">Experience it for yourself</h1>
+
+            <!--Inspection Type-->
+            <div class="form-section">
+            <label class="section-label">Inspection Type</label>
+            <div class="choice-container">
+                <input type="radio" name="Inspection" id="in-person" checked>
+                <label for="in-person" class="choice-box">In-Person</label>
+
+                <input type="radio" name="Inspection" id="Virtual Tout" checked>
+                <label for="Virtual Tour" class="choice-box">Virtual Tour</label>
+             </div>
+            </div>
+
+            <!--Who will attend-->
+            <div class="form-section">
+            <label class="section-label">Who will attend?</label>
+            <div class="choice-container">
+                <input type="radio" name="attendee" id="myself" checked>
+                <label for="myself" class="choice-box">Myself</label>
+                <input type="radio" name="attendee" id="someone else" checked>
+                <label for="someone else" class="choice-box">Someone Else</label>
+            </div>
+            </div>
+
+            <!--Name-->
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <!--Email-->
+            <label>Email Adress</label>
+            <input type="email" placeholder="olivie@example.com">
+
+            <!--Phone-->
+            <label>Phone Number (Preferably WhatsApp)</label>
+            <div class="phone-box">
+                <span>+234</span>
+                <input type="text" placeholder="Enter your phone number">
+            </div>
+
+            <!--Date-->
+            <label for="start-date">Preferred Date</label>
+            <input type="date" id="start-date" name="start-date">
+           
+
+            <!--Time-->
+            <label>Preferred Time</label>
+            <select>
+                <option>Select Time</option>
+                <option>9:00 Am</option>
+                <option>10:00 AM</option>
+                <option>12:00 PM</option>
+            </select>
+
+            <!--Relationship-->
+            <label>Relationship (Optional)</label>
+            <select>
+                <option>Preferred Relationship</option>
+                <option>Family</option>
+                <option>Friend</option>
+                <option>Agent</option>
+            </select>
+            <!--Additional-->
+            <label>Addition Notes (Optional)</label>
+            <textarea placeholder="Any additional information or requests." rows="4"></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+            </section>
+        </div>
+    </div>
+    
+       
+        <!--bottom Bar-->
+        <div class="floating-buttons">
+            <strong>Luxury Apartment</strong><br>
+            ₦1,200,000
+
+            <div class="buttons">
+                <a href="https://wa.me/+2349050205148" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Whatsapp</span>
+            </a>
+            
+                <a href="#booking-form" class="book">Book Inspection</a>
+            </div>
+        </div>
+
+         <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="fullImage" src="">
+        <div id="caption"></div>
+
+        <a class="prev" onclick="changegalleryImage(-1)">&#10094;</a>
+        <a class="next" onclick="changegalleryImage(1)">&#10095;</a>
+        <div class="numbertext"><span id="currentNum">1</span> / <span id="totalNum">3</span></div>
+    </div>
+        <script src="indexscript.js"></script>
+        <script>
+        function openMenu() {
+            document.getElementById("menu").classList.add("active");
+        }
+        function closeMenu() {
+            document.getElementById("menu").classList.remove("active");
+        }
+    </script>
+    </body>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!--Contact-->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>+234 905 020 5148</p>
+                <p>jadewumi@gmail.com</p>
+                <P>Lekki, Lagos, Nigeria</P>
+            </div>
+            <hr>
+
+            <!--Quick Links-->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="Apartments.html">Apartments</a>
+                <a href="contact.hmtl">Contact</a>
+            </div>
+            <hr>
+
+            <!--Customer Service-->
+            <div class="footer-box">
+                <h3>Customer Service</h3>
+                <a href="#">Support</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <hr>
+
+            <!--Legal-->
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">@ 2026 Conceptv Agency. All rights reserved</p>
+
+    </footer>   
